@@ -3,6 +3,7 @@ const bodyparser = require('body-parser');
 const bcrypt = require('bcrypt-nodejs'); // for storing passwords securely
 const cors = require('cors');
 const knex = require('knex');
+const PORT =  process.env.PORT;
 
 const db = knex({
     client: 'pg',
@@ -100,8 +101,8 @@ app.put('/image', (req, res) => {
 })
 
 
-app.listen(3000, () => {
-    console.log('App is running on localHost:3000')
+app.listen(PORT, () => {
+    console.log(`App is running on port ${PORT}`)
 });
 
 
