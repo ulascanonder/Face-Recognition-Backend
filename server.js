@@ -8,11 +8,11 @@ const PORT =  process.env.PORT;
 const db = knex({
     client: 'pg',
     connection: {
-      host : '127.0.0.1',
+      host : 'dpg-cmk026nqd2ns73bmsmmg-a',
       port : 5432,
-      user : 'postgres',
-      password : 'test',
-      database : 'face-recognition'
+      user : 'users_dbxv_user',
+      password : 'UWa99cCzAJE29ZytSlAQhGv0aZRR32uS',
+      database : 'users_dbxv'
     }
   });
 
